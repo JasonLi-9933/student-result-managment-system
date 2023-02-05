@@ -1,0 +1,12 @@
+.students-info-form {
+	border-style: solid;
+	border-color: #30E3DF;
+	padding: 10px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+}
+
+.students-info-form button {
+	align-self: flex-end;
+}

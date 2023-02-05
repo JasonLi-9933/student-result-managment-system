@@ -1,0 +1,11 @@
+.navbar {
+  height: 100vh;
+  width: 180px;
+	flex-direction: column;
+}
+
+.navbar .navbar-nav {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
