@@ -7,6 +7,10 @@
 	flex-direction: column;
 }
 
-.students-info-form button {
+.students-info-form .button-container  {
 	align-self: flex-end;
+}
+
+.students-info-form .button-container button  {
+	margin: 0 3px;
 }
