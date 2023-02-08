@@ -1,4 +1,4 @@
-.student-info-form {
+.course-info-form {
 	border-style: solid;
 	border-color: #30E3DF;
 	padding: 10px;
@@ -7,10 +7,10 @@
 	flex-direction: column;
 }
 
-.student-info-form .button-container  {
+.course-info-form .button-container  {
 	align-self: flex-end;
 }
 
-.student-info-form .button-container button  {
+.course-info-form .button-container button  {
 	margin: 0 3px;
 }

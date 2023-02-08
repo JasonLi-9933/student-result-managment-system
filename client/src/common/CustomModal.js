@@ -5,7 +5,7 @@ function CustomModal({title, body, show, setShow}) {
   return (
     <>
       <Modal show={show}>
-        <Modal.Header closeButton>
+        <Modal.Header>
           <Modal.Title>{title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>{body}</Modal.Body>

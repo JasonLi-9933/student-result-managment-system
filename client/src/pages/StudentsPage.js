@@ -33,7 +33,7 @@ function StudentsPage() {
             console.log(res);
             setShowModal(true);
             setModalContent(SuccessModalContent);
-            loadData()
+            loadData();
           })
           .catch((err) => {
             setShowModal(true);
@@ -53,17 +53,15 @@ function StudentsPage() {
   };
 
   const loadData = () => {
-            api.get("/api/students/all").then((res) => {
-              res.data.forEach(
-                (d) => (d.birthdate = d.birthdate.split("T")[0])
-              );
-              setTableData(res.data);
-            });
-  }
+    api.get("/api/students/all").then((res) => {
+      res.data.forEach((d) => (d.birthdate = d.birthdate.split("T")[0]));
+      setTableData(res.data);
+    });
+  };
   return (
     <div className="page-content">
       <Form
-        className="students-info-form"
+        className="student-info-form"
         onSubmit={handleSubmit}
         validated={validated}
         noValidate
@@ -113,7 +111,9 @@ function StudentsPage() {
           </Form.Group>
         </Row>
         <div className="button-container">
-          <Button variant="success" onClick={loadData}>See All Students</Button>
+          <Button variant="success" onClick={loadData}>
+            See All Students
+          </Button>
           <Button type="submit">Submit</Button>
         </div>
       </Form>

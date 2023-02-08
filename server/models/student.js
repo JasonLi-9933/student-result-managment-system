@@ -1,4 +1,4 @@
-const db = require("../db/db");
+const constructPromiseFromQuery = require('../util');
 
 class Student {
   constructor(firstName, lastName, birthDate) {
@@ -21,15 +21,6 @@ class Student {
     const query = `SELECT * FROM students`;
     return constructPromiseFromQuery(query);
   }
-}
-
-const constructPromiseFromQuery = query => {
-    return new Promise((resolve, reject) => {
-      db.execute(query, (err, results) => {
-        if (err) reject(err);
-        else resolve(results);
-      })
-    })
 }
 
 module.exports = Student;
